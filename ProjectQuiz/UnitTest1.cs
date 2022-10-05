@@ -9,6 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.DevTools;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.DevTools.V104.Browser;
 
 namespace ProjectQuiz
 
@@ -209,7 +210,7 @@ namespace ProjectQuiz
 
 
             IWebElement file_choose = driver.FindElement(By.Name("upload_file"));
-            file_choose.SendKeys("C:\\Users\\ilaij\\Downloads\\beauty.jpj");
+               file_choose.SendKeys("C:\\Users\\ilaij\\Downloads\\beauty.jpj");
 
 
             IWebElement click_btn = driver.FindElement(By.Name("submit"));
@@ -217,10 +218,22 @@ namespace ProjectQuiz
             click_btn.Click();
 
 
-
+            driver.Close();
 
 
 
         }
+        [TestMethod]
+        public void check_out()
+        { 
+        
+        
+        
+        }
+
+
+
+
+
     }
 }
